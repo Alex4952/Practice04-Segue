@@ -64,6 +64,10 @@ class ViewController: UIViewController {
 		NSLog("세그웨이가 실행되었습니다.")
 	}
 	
+	@IBAction func unwindToMainVC(segue: UIStoryboardSegue) {
+		// none
+	}
+	
 	
 }
 
