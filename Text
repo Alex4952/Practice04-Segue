@@ -1,1 +1,18 @@
 segue 연결시 show를 선택해야 네비게이션바가 생김
+
+네비게이터 : 
+		if let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01") {
+			self.navigationController?.pushViewController(uvc, animated: true)
+		}
+    
+    Back
+    navigationController.pop
+
+코드에 의한 이동 : 
+		if let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("DV01") {
+			uvc.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+			self.presentViewController(uvc, animated: true, completion: {NSLog("화면전환완료")})
+
+    Back			
+    presentingViewController.dismiss
+
