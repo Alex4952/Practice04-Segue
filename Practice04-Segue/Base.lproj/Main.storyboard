@@ -22,18 +22,25 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxu-I9-wMv">
-                                <rect key="frame" x="169" y="172" width="37" height="30"/>
-                                <state key="normal" title="mv01"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuP-de-SvK">
+                                <rect key="frame" x="168" y="319" width="39" height="30"/>
+                                <state key="normal" title="mv03"/>
                                 <connections>
-                                    <segue destination="ZfC-Ll-II7" kind="presentation" id="meA-ke-Lnx"/>
+                                    <action selector="move03:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6b-Ff-ff7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sp9-HI-TDf">
-                                <rect key="frame" x="168" y="224" width="39" height="30"/>
-                                <state key="normal" title="mv02"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz6-wP-uGQ">
+                                <rect key="frame" x="168" y="373" width="39" height="30"/>
+                                <state key="normal" title="mv04"/>
                                 <connections>
-                                    <segue destination="ZfC-Ll-II7" kind="show" id="XRa-4K-BzV"/>
+                                    <action selector="mv04:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TH9-z4-1Oj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4t-Kn-PkI">
+                                <rect key="frame" x="168" y="418" width="39" height="30"/>
+                                <state key="normal" title="mv05"/>
+                                <connections>
+                                    <segue destination="ZfC-Ll-II7" kind="show" id="IqS-lq-6jO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,10 +48,33 @@
                     </view>
                     <navigationItem key="navigationItem" title="첫번째 화면" id="v3h-ND-uhD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="ZfC-Ll-II7" kind="show" identifier="moveSegue" id="aHz-ri-upZ"/>
+                        <segue destination="vz5-wn-FMA" kind="show" identifier="moveSegue2" id="my6-jk-2ED"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="811.5" y="446.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lAV-wt-85L">
+            <objects>
+                <viewController id="vz5-wn-FMA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="925-zv-dqG"/>
+                        <viewControllerLayoutGuide type="bottom" id="JUl-Uu-zON"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IIT-xE-nOf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzc-Lv-8ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811.5" y="1230.5"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="xI0-su-G1A">
@@ -108,6 +138,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="meA-ke-Lnx"/>
+        <segue reference="IqS-lq-6jO"/>
     </inferredMetricsTieBreakers>
 </document>
