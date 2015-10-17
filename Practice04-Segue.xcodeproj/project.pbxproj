@@ -15,6 +15,7 @@
 		044434001BD1F6410015A4D1 /* Practice04_SegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044433FF1BD1F6410015A4D1 /* Practice04_SegueTests.swift */; };
 		0444340B1BD1F6410015A4D1 /* Practice04_SegueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444340A1BD1F6410015A4D1 /* Practice04_SegueUITests.swift */; };
 		044434191BD1FA0C0015A4D1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044434181BD1FA0C0015A4D1 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0444341B1BD208730015A4D1 /* NewSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444341A1BD208730015A4D1 /* NewSegue.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0444340A1BD1F6410015A4D1 /* Practice04_SegueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice04_SegueUITests.swift; sourceTree = "<group>"; };
 		0444340C1BD1F6410015A4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		044434181BD1FA0C0015A4D1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0444341A1BD208730015A4D1 /* NewSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				044433EA1BD1F6410015A4D1 /* AppDelegate.swift */,
 				044433EC1BD1F6410015A4D1 /* ViewController.swift */,
 				044434181BD1FA0C0015A4D1 /* DetailViewController.swift */,
+				0444341A1BD208730015A4D1 /* NewSegue.swift */,
 				044433EE1BD1F6410015A4D1 /* Main.storyboard */,
 				044433F11BD1F6410015A4D1 /* Assets.xcassets */,
 				044433F31BD1F6410015A4D1 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0444341B1BD208730015A4D1 /* NewSegue.swift in Sources */,
 				044434191BD1FA0C0015A4D1 /* DetailViewController.swift in Sources */,
 				044433ED1BD1F6410015A4D1 /* ViewController.swift in Sources */,
 				044433EB1BD1F6410015A4D1 /* AppDelegate.swift in Sources */,
